@@ -22,7 +22,7 @@
   height: 200px;
   border-radius: 13px;
 }
-* Details Container *
+
 .details {
   display: flex;
   flex-direction: column;

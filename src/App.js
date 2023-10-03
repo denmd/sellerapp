@@ -53,8 +53,7 @@ function App() {
               to={`/page/${pageNumber}`}
               key={pageNumber}
               onClick={() => {setCurrentPage(pageNumber);
-               
-              }}
+               setSearchTerm(searchTerm)}}
               
               className={pageNumber === currentPage ? 'active' : ''}
               
