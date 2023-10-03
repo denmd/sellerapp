@@ -1,21 +1,23 @@
-import React, { useState ,useMemo} from 'react';
-import { BrowserRouter as Router, Route, Routes, Link, useNavigate } from 'react-router-dom';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
 import Header from './Components/Header';
 import CarData from "./CarData.json";
 import CarList from './Components/CarList.js';
-import { useParams } from 'react-router-dom';
+
 
 function App() {
-  const { page } = useParams();
-  const CurrentPage = page ? parseInt(page) : 1;
+  const [currentPage,setCurrentPage]=useState(1)
   const itemsPerPage = 6;
   const totalItems = CarData.length;
   const totalPages = Math.ceil(totalItems / itemsPerPage);
   const [searchTerm, setSearchTerm] = useState('');
+  
  
   const handleSearch = (searchTerm) => {
+    setCurrentPage(1); 
     setSearchTerm(searchTerm);
+    
   };
   const generatePageNumbers = () => {
     const pageNumbers = [];
@@ -41,22 +43,27 @@ function App() {
         </Routes>
 
         <div className="pagination">
-        {CurrentPage === 1 ? (
-            <Link to={`/page/${CurrentPage}`}>Previous</Link>
+        {currentPage === 1 ? (
+            <Link to={`/page/${currentPage}`}>Previous</Link>
           ) : (
-            <Link to={`/page/${CurrentPage - 1}`}>Previous</Link>
+            <Link to={`/page/${currentPage}`}  onClick={() => setCurrentPage(currentPage-1)}>Previous</Link>
           )}
           {generatePageNumbers().map((pageNumber) => (
             <Link
               to={`/page/${pageNumber}`}
               key={pageNumber}
-              className={pageNumber === CurrentPage ? 'active' : ''}
+              onClick={() => {setCurrentPage(pageNumber);
+               
+              }}
+              
+              className={pageNumber === currentPage ? 'active' : ''}
+              
             >
               {pageNumber}
             </Link>
           ))}
-          {CurrentPage < totalPages && (
-            <Link to={`/page/${CurrentPage + 1}`}>Next</Link>
+          {currentPage < totalPages && (
+            <Link to={`/page/${currentPage}` }  onClick={() => setCurrentPage(currentPage+1)}>Next</Link>
           )}
          
         </div>

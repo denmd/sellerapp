@@ -22,13 +22,13 @@
   height: 200px;
   border-radius: 13px;
 }
-* Details Container */
+* Details Container *
 .details {
   display: flex;
   flex-direction: column;
 }
 
-/* Row-like structure for each division */
+
 .rows {
   display: flex;
   justify-content: space-between;
@@ -37,13 +37,13 @@
 
 }
 
-/* Styling for specific divisions */
+
 .capacity {
   display: flex;
   align-items: center;
 }
 .capacity p {
-  margin-left: 14px; /* Add space between icon and text */
+  margin-left: 14px; 
 }
 .hybrid{
   display: flex;
@@ -51,7 +51,7 @@
 }
 .hybrid p ,.automatic p,.milage p{
   
-  margin-left: 10px; /* Add space between icon and text */
+  margin-left: 10px; 
 }
 
 .automatic,.milage,.rent_rows{

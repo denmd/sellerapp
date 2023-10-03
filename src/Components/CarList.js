@@ -1,19 +1,27 @@
-import React, { useState } from 'react';
+import React  from 'react';
 import Card from './Card';
 import { useParams } from 'react-router-dom';
 
 const CarList = ({ carData ,searchTerm}) => {
-    console.log("heyy")
+    
     const { page } = useParams();
     const currentPage = page ? parseInt(page) : 1;
    
   const itemsPerPage = 6;
   const startIndex = (currentPage-1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
-  const filteredCars = carData.filter((car) =>
-  car.name.toLowerCase().includes(searchTerm.toLowerCase())
-);
-const currentData = filteredCars.slice(startIndex, endIndex);
+ 
+let currentData;
+
+if (searchTerm.trim() !== "") {
+  currentData = carData.filter((car) =>
+    car.name.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+} else {
+  currentData = carData.slice(startIndex, endIndex);
+}
+
+
 if (currentData.length === 0 ) {
     return (
       <div className="error-message">

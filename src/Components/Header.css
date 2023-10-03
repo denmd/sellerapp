@@ -13,7 +13,7 @@
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   }
   
-  /* Style for the logo or site name */
+ 
  
   
   
@@ -33,7 +33,7 @@
     border-radius: 15px;
   }
   
-  /* Style for the search button */
+  
   .nav-search button {
     background-color: transparent;
     color: black;
@@ -43,25 +43,25 @@
     border-radius: 3px;
   }
   
-  /* Style for the navigation links */
+  
   .nav-links {
     list-style: none;
     padding: 0;
     display: flex;
   }
   
-  /* Style for each navigation item */
+  
   .nav-links li {
     margin-right: 20px;
   }
   
-  /* Style for the navigation links (anchors) */
+ 
   .nav-links a {
     text-decoration: none;
     color: white;
   }
   
-  /* Style for hover effect on navigation links */
+ 
   .nav-links a:hover {
     text-decoration: underline;
   }

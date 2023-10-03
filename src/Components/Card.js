@@ -4,13 +4,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUsers, faGasPump,faTachometerAlt, faCog ,faHeart} from '@fortawesome/free-solid-svg-icons';
 
 function Card({ data, index }) {
-  console.log("hello")
+
   const { image, name, year, seatingCapacity, hybrid, mileage, automaticTransmission, rentPrice } = data;
 
-  const addToWishlist = () => {
-    alert('Added to Wishlist');
-  }
-
+ 
   const rentNow = () => {
     alert('Rent Now');
   }
@@ -52,7 +49,7 @@ function Card({ data, index }) {
         </div>
       </div>
       <div className='rent_rows'>
-        <p> ${rentPrice} <h4></h4>/month</p>
+        <p> ${rentPrice} /month</p>
         <div className='rent_buttons'>
              <p><FontAwesomeIcon icon={faHeart} /></p>
               <button onClick={rentNow}>Rent Now</button>
