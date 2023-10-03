@@ -1,0 +1,58 @@
+/* CarList.css */
+
+/* Style for the car container */
+.car-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  /* Style for individual car card */
+  .car-card {
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin: 10px;
+    width: 30%;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style for car card image */
+  .car-image {
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  /* Style for car details */
+  .car-details {
+    margin-top: 10px;
+  }
+  
+  /* Style for pagination */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .pagination li {
+    margin: 0 5px;
+  }
+  
+  .pagination a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .pagination .active a {
+    color: #333;
+    pointer-events: none;
+  }
+  

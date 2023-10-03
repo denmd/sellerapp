@@ -1,0 +1,88 @@
+.card {
+  border: 1px solid  #8cc1fa;;
+  padding: 16px;
+  margin: 28px;
+  width: 27%;
+  display: inline-block;
+  box-sizing: border-box;
+  background-color:white;
+  height: 50%;
+  border-radius: 18px;
+  box-shadow: 0px 4px 6px rgba(0.2, 0.1, 0.1 , 0.4);
+
+}
+
+.card h2 {
+  
+  float: left;
+}
+
+.car-img img{
+  width: 300px;
+  height: 200px;
+  border-radius: 13px;
+}
+* Details Container */
+.details {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Row-like structure for each division */
+.rows {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  
+
+}
+
+/* Styling for specific divisions */
+.capacity {
+  display: flex;
+  align-items: center;
+}
+.capacity p {
+  margin-left: 14px; /* Add space between icon and text */
+}
+.hybrid{
+  display: flex;
+  flex-direction: row;
+}
+.hybrid p ,.automatic p,.milage p{
+  
+  margin-left: 10px; /* Add space between icon and text */
+}
+
+.automatic,.milage,.rent_rows{
+  width: 100px;
+  display: flex;
+  flex-direction: row;
+}
+.rent_rows{
+ 
+  width:300px;
+  height: 50px;
+  align-items:center;
+  border-radius: 10px;
+  box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.1);
+}
+.rent_buttons{
+  width:300px;
+  height: 25px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.rent_buttons button,.rent_buttons p{
+  margin-right: 10px;
+}
+.rent_buttons button{
+  width: 70px;
+  height: 35px;
+  color: white;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 12px;
+}

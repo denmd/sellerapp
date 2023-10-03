@@ -1,0 +1,123 @@
+
+[
+  {
+  "name": " Car-1",
+  "year":2019,
+  "image": "/car-1.jpg",
+  "seatingCapacity": 5,
+  "hybrid": "Hybrid",
+  "mileage": "30 mpg",
+  "automaticTransmission": "Automatic",
+  "rentPrice": 50
+},
+{
+  "name": "Car-2",
+  "year":2019,
+  "image": "/img1.jpeg",
+  "seatingCapacity": 5,
+  "hybrid": "Gasoline",
+  "mileage": "30 mpg",
+  "automaticTransmission":"Automatic",
+  "rentPrice": 50
+},
+{
+  "name": "Car-3",
+  "year":2019,
+  "image": "/img2.jpeg",
+  "seatingCapacity": 5,
+  "hybrid": "Gasoline",
+  "mileage": "30 mpg",
+  "automaticTransmission":"Automatic",
+  "rentPrice": 50
+},
+{
+  "name": " Car-1",
+  "year":2019,
+  "image": "/img3.jpeg",
+  "seatingCapacity": 5,
+  "hybrid": "Hybrid",
+  "mileage": "30 mpg",
+  "automaticTransmission": "Automatic",
+  "rentPrice": 50
+},
+{
+  "name": "Car-2",
+  "year":2019,
+  "image":"/img4.jpeg",
+  "seatingCapacity": 5,
+  "hybrid": "Gasoline",
+  "mileage": "30 mpg",
+  "automaticTransmission":"Automatic",
+  "rentPrice": 50
+},
+{
+  "name": "Car-6",
+  "year":2019,
+  "image": "/img5.jpeg",
+  "seatingCapacity": 5,
+  "hybrid": "Hybrid",
+  "mileage": "30 mpg",
+  "automaticTransmission":"Automatic",
+  "rentPrice": 50
+},
+{
+  "name": " Car-7",
+  "year":2019,
+  "image": "/img6.jpeg",
+  "seatingCapacity": 5,
+  "hybrid": "Hybrid",
+  "mileage": "30 mpg",
+  "automaticTransmission": "Automatic",
+  "rentPrice": 50
+},
+{
+  "name": "Car-8",
+  "year":2019,
+  "image": "/img7.jpg",
+  "seatingCapacity": 5,
+  "hybrid": "Gasoline",
+  "mileage": "30 mpg",
+  "automaticTransmission":"Automatic",
+  "rentPrice": 50
+},
+{
+  "name": "Car-9",
+  "year":2019,
+  "image": "/img8.jpg",
+  "seatingCapacity": 5,
+  "hybrid": "Hybrid",
+  "mileage": "30 mpg",
+  "automaticTransmission":"Automatic",
+  "rentPrice": 50
+},
+{
+  "name": " Car-10",
+  "year":2019,
+  "image": "/car-1.jpg",
+  "seatingCapacity": 5,
+  "hybrid": "Gasoline",
+  "mileage": "30 mpg",
+  "automaticTransmission": "Automatic",
+  "rentPrice": 50
+},
+{
+  "name": "Car-7",
+  "year":2019,
+  "image":"/img1.jpeg",
+  "seatingCapacity": 5,
+  "hybrid": "Gasoline",
+  "mileage": "30 mpg",
+  "automaticTransmission":"Automatic",
+  "rentPrice": 50
+},
+{
+  "name": "Car-12",
+  "year":2019,
+  "image": "/img2.jpeg",
+  "seatingCapacity": 5,
+  "hybrid": "Hybrid",
+  "mileage": "30 mpg",
+  "automaticTransmission":"Automatic",
+  "rentPrice": 50
+}
+]
